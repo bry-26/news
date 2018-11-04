@@ -6,6 +6,6 @@ Technology Stack:
 - Django 2.1.x
 
 Setup:
-- Setup you env variables, see .env.example file.
-- Run database migration: python manage.py migrate.
-
+- Setup you env variables, see .env.example file
+- Run database migration: python manage.py migrate
+- Populate articles: python manage.py populate_articles
