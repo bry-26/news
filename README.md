@@ -7,3 +7,5 @@ Technology Stack:
 
 Setup:
 - Setup you env variables, see .env.example file.
+- Run database migration: python manage.py migrate.
+
