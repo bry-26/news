@@ -22,7 +22,7 @@ class Article(models.Model):
     @classmethod
     def get_top_headlines(cls):
         newsapi = NewsApiClient(api_key=settings.NEWS_API_KEY)
-        top_headlines = newsapi.get_top_headlines(language='en', country='us')
+        top_headlines = newsapi.get_top_headlines(language='en', country='us', page_size=100)
         articles = top_headlines.get('articles', [])
         news_headlines = []
         batch_size = top_headlines.get('totalResults', 20)
